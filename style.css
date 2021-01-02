@@ -1,0 +1,132 @@
+:root {
+  font-size: 14px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --main-bg-color: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex.row {
+  overflow: hidden;
+}
+
+.output-container {
+  padding: 0.5em;
+  background: rgba(226, 129, 132, 0.145);
+}
+
+.output-container > .col {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: var(--main-bg-color);
+}
+
+.ctrl-container,
+.property-container,
+.color-container {
+  padding: 0.5em 0;
+  width: calc(600px + 1em);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ctrl-container .btn.current, .ctrl-container .btn.highlite,
+.property-container .btn.current,
+.property-container .btn.highlite,
+.color-container .btn.current,
+.color-container .btn.highlite {
+  color: white;
+}
+
+.ctrl-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ctrl-container .btn {
+  background: rgba(226, 150, 100, 0.5);
+}
+
+.ctrl-container > .col {
+  padding: 0.25em;
+}
+
+.property-container .btn {
+  background: rgba(130, 250, 200, 0.8);
+}
+
+.btn {
+  display: block;
+  font-size: 1.25em;
+  width: 120px;
+  line-height: 1.25;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #7fc8d4;
+  outline: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn.link-btn {
+  text-align: center;
+}
+
+.btn.shadow-btn {
+  -webkit-box-shadow: 5px 5px 5px #333;
+          box-shadow: 5px 5px 5px #333;
+}
+
+.btn.small-btn {
+  width: 100px;
+}
+
+.btn.big-btn {
+  width: 150px;
+}
+
+.brush-container {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+  .row {
+    width: 95vw;
+  }
+  .output-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canvas Tutorial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="flex row brush-container">
+      <div class="col flex row color-container">
+        <div class="col">
+          <button type="button" data-color="#f00" class="btn link-btn">Red</button>
+        </div>
+        <div class="col">
+          <button type="button" data-color="#0f0" class="btn link-btn">Green</button>
+        </div>
+        <div class="col">
+          <button type="button" data-color="blue" class="btn link-btn">Blue</button>
+        </div>
+        <div class="col">
+          <button type="button" data-color="cyan" class="btn link-btn">Cyan</button>
+        </div>
+      </div>
+      <div class="col flex row property-container">
+        <div class="col">
+          <button type="button" class="btn link-btn lineDash">Dash</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn link-btn lineDashOffset">DashOffset</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn link-btn lineCap">Cap</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn link-btn lineWidth">Width</button>
+        </div>
+      </div>
+      <div class="col flex row ctrl-container">
+        <div class="col">
+          <button type="button" class="btn link-btn redo">Redo</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn link-btn undo">Undo</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn link-btn clear">Clear</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn link-btn replay">Replay</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn link-btn eraser">Eraser</button>
+        </div>
+        <div class="col">
+          <a type="button" class="btn link-btn save">Save</a>
+        </div>
+        <div class="col">
+          <button type="button" class="btn link-btn drawHouse">DrawHouse</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn link-btn lock">Lock</button>
+        </div>
+      </div>
+      <div class="col flex row output-container">
+        <div class="col">
+          <canvas id="target" class="canvas" width="600" height="450"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./EventUtil.js"></script>
+  <script src="./Eraser.js"></script>
+  <script src="./Brush.js"></script>
+  <script src="./Painter.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
